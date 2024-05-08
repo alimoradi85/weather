@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>night weather</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body id="body">
+    <!-- DATER AND LOCATION -->
+    <div class="about-date-location">
+        <h2 class="date-night">سه‌شنبه 17 شهریور</h2>
+        <div class="for-location">
+        <h2 class="location-night">تهران</h2>
+        <i class="fa fa-location-arrow"></i>
+        </div>
+    </div>
+    <!-- WEATHER -->
+    <div class="weather">
+        <div class="for-table">
+          <div class="caption">
+            <a href="#">پیش بینی روز های آینده</a>
+            <i class="fa fa-calendar"></i>
+          </div>
+          <!-- TABLE -->
+        <table class="table-for-weader">
+            <tr>
+                <td><a href="#" id="click">شنبه</a></td>
+                <td><img src="image/bigrain-drops.png" alt=""></td>
+                <td>حداکثر °11</td>
+                <td>6°حداقل</td>
+            </tr>
+            <tr>
+                <td><a href="#" id="click1" onclick="Changelmage()">یکشنبه</a></td>
+                <td><img src="image/sunny-wind.png" alt=""></td>
+                <td>حداکثر °15</td>
+                <td>8° حداقل</td>
+            </tr>
+            <tr>
+                <td><a href="#" id="click2">دو شنبه</a></td>
+                <td><img src="image/sun.png" alt=""></td>
+                <td>حداکثر °17</td>
+                <td>9° حداقل</td>
+            </tr>
+            <tr>
+                <td><a href="#" id="click3">سه شنبه</a></td>
+                <td><img src="image/rani-moon.png" alt=""></td>
+                <td>حداکثر °10</td>
+                <td>5° حداقل</td>
+            </tr>
+            <tr>
+                <td><a href="#" id="click4">چهار شنبه</a></td>
+                <td><img src="image/moon.png" alt=""></td>
+                <td>حداکثر °12</td>
+                <td>7° حداقل</td>
+            </tr>
+            <tr>
+                <td><a href="#" id="click5">پنجشنبه</a></td>
+                <td><img src="image/sunny-wind2.png" alt=""></td>
+                <td>حداکثر°13</td>
+                <td>8°حداقل</td>
+            </tr>
+        </table>
+        </div>
+        <div class="icon">
+        <img src="image/raini.png" alt="" id="iconpage">
+        <h1 class="dergee">9°</h1>
+        <div class="how-is-weather"></div>
+        <div class="maximum-weather">
+            <h4>8° حداقل</h4>
+            <h4>14° حداکثر</h4>
+        </div>    
+        </div>
+    </div>
+    <div class="beispiel"></div>
+<script>
+    var click = document.getElementById("click");
+
+    click.onclick = function(){
+        document.body.classList.toggle("dark-mode");
+        document.getElementById('iconpage').src='image/raini.png';
+        }
+
+    var click = document.getElementById("click1");
+
+    click1.onclick = function(){
+        document.body.classList.toggle("light-mode");
+        document.getElementById('iconpage').src='image/sunny-wind.png';
+    }
+
+    var click = document.getElementById("click2");
+
+    click2.onclick = function(){
+        document.body.classList.toggle("light-mode");
+        document.getElementById('iconpage').src='image/sun.png';
+
+    }
+
+    var click = document.getElementById("click3");
+
+    click3.onclick = function(){
+        document.body.classList.toggle("dark-mode");
+        document.getElementById('iconpage').src='image/rani-moon.png';
+
+    }
+
+    var click = document.getElementById("click4");
+
+    click4.onclick = function(){
+        document.body.classList.toggle("dark-mode");
+        document.getElementById('iconpage').src='image/moon.png';
+    }
+
+    var click = document.getElementById("click5");
+
+    click5.onclick = function(){
+        document.body.classList.toggle("light-mode");
+        document.getElementById('iconpage').src='image/sunny-wind2.png';
+    }
+    
+</script>
+</body>
+</html>

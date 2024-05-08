@@ -121,11 +121,7 @@ tr a{
     padding: 0px 20px;
 }
 
-.beispiel{
-    width: 200px;
-    height: 200px;
-    background-color: var(--bg-color);
-}
+
 /* RESPANSIVE */
 @media (max-width:767px){
     .weather{
